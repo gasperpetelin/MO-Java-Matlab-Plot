@@ -1,3 +1,6 @@
+package Ploters;
+
+import Solutions.Solution;
 import org.jzy3d.chart.factories.AWTChartComponentFactory;
 import org.jzy3d.colors.Color;
 import org.jzy3d.maths.Coord3d;

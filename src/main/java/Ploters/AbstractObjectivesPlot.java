@@ -1,3 +1,5 @@
+package Ploters;
+
 import org.jzy3d.analysis.AbstractAnalysis;
 
 public abstract class AbstractObjectivesPlot extends AbstractAnalysis

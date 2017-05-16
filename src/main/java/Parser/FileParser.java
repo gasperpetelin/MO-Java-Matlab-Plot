@@ -1,3 +1,7 @@
+package Parser;
+
+import Solutions.Solution;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -34,7 +38,8 @@ public class FileParser
                     obj[i] = Double.parseDouble(arr[3+vars+i]);
                 }
                 int front = Integer.parseInt(arr[2]);
-                list.add(new Solution(vars, objs, obj, front));
+                int generation = Integer.parseInt(arr[0]);
+                list.add(new Solution(vars, objs, obj, front, generation));
             }
             else
             {
@@ -43,10 +48,7 @@ public class FileParser
 
             }
             isHeader = false;
-
-
         }
-
         return list;
     }
 }

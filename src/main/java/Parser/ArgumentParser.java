@@ -1,4 +1,4 @@
-package ArgumentsParser;
+package Parser;
 
 
 import org.apache.commons.cli.*;
@@ -27,6 +27,9 @@ public class ArgumentParser
         Option front = new Option("front", "front", true, "front to display");
         options.addOption(front);
 
+        Option result = new Option("r", "result", false, "display only last iteration.");
+        options.addOption(result);
+
         CommandLineParser parser = new BasicParser();
         cmd = parser.parse(options, args);
     }
@@ -34,6 +37,11 @@ public class ArgumentParser
     public String getFileName()
     {
         return cmd.getOptionValue("file");
+    }
+
+    public boolean getOnlyEndResult()
+    {
+        return cmd.hasOption("result");
     }
 
     public Integer getFront() throws ParseException
