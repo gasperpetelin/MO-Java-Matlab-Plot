@@ -3,9 +3,8 @@ import Parser.FileParser;
 import Ploters.ObjectivesPlotFactory;
 import Solutions.Solution;
 import Solutions.SolutionFilters;
-import org.apache.commons.cli.ParseException;
 import org.jzy3d.analysis.AnalysisLauncher;
-import java.io.IOException;
+
 import java.util.List;
 
 
@@ -31,9 +30,6 @@ public class main
             System.out.println(e.getMessage());
             System.exit(1);
         }
-
-
-
     }
 
 }
